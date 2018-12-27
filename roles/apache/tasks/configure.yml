@@ -1,0 +1,11 @@
+---
+#Configure the httpd
+
+
+- name: Configure the httpd.conf file using the template
+  template: src=httpd.conf dest=/etc/httpd/conf/httpd.conf
+  notify:
+   - restart httpd service
+
+- name: Copy index.html to remote server
+  copy: src=index.html dest=/var/www/html/index.html

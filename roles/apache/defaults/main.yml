@@ -1,0 +1,15 @@
+---
+# defaults file for apache
+apache_listen_ip: "*"
+[app]
+apache_listen_port: 80
+
+[db]
+apache_listen_port: 8080
+#apache_listen_port_db: "8080"
+
+#apache_allow_override: "All"
+#apache_optinons: "-Indexes +FollowSymLinks"
+
+#apachhe_mods_enabled:
+#  - rewrite

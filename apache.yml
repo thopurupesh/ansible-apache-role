@@ -1,0 +1,9 @@
+---
+- name: Install and configure HTTPD
+  hosts:
+    - app
+    - db
+  become: sudo
+  become_user: root
+  roles:
+    - apache
